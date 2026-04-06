@@ -1,0 +1,22 @@
+package tarcing.contoller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import io.micrometer.tracing.Tracer;
+
+@RestController
+public class deom {
+
+	 @Autowired
+     Tracer tarce;
+	
+	@GetMapping("/Akash")
+	public String hello() {
+		
+		return "Akash guttedar";
+	}
+	
+	
+}

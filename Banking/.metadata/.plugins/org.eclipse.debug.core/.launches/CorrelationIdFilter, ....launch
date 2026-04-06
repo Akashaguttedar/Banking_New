@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.testng.eclipse.launchconfig">
+    <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="User_Services"/>
+    <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+    <mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS"/>
+    <listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
+        <listEntry value="Banking.User.Services.Entity.geneator.UserId"/>
+        <listEntry value="Banking.User.Services.Entity.geneator.CredIdGenerator"/>
+        <listEntry value="Banking.User.Services.Entity.DTO.ProfileUpdateResp"/>
+        <listEntry value="Banking.User.Services.config.FilterConfig"/>
+        <listEntry value="Banking.User.Services.validate.UniqUserName"/>
+        <listEntry value="Banking.User.Services.UserServicesApplication"/>
+        <listEntry value="Banking.User.Services.Entity.geneator.UserIdInitializer"/>
+        <listEntry value="Banking.User.Services.services.User_services"/>
+        <listEntry value="Banking.User.Services.services.imp.User_Services_imp"/>
+        <listEntry value="Banking.User.Services.Entity.DTO.ChangePasswordReq"/>
+        <listEntry value="Banking.User.Services.Entity.Usercredential"/>
+        <listEntry value="Banking.User.Services.idempotency.IdempotencyResponse"/>
+        <listEntry value="Banking.User.Services.controller.AuthController"/>
+        <listEntry value="Banking.User.Services.payload.ApiResponse"/>
+        <listEntry value="Banking.User.Services.repository.User_service_repository"/>
+        <listEntry value="Banking.User.Services.idempotency.IdempotencyStore"/>
+        <listEntry value="Banking.User.Services.idempotency.IdempotencyAspect"/>
+        <listEntry value="Banking.User.Services.Entity.geneator.UserIdGenerator"/>
+        <listEntry value="Banking.User.Services.Exception.ResourceAlreadyFoundException"/>
+        <listEntry value="Banking.User.Services.Exception.GlobalExcveptionHandler"/>
+        <listEntry value="Banking.User.Services.UserServicesApplicationTests"/>
+        <listEntry value="Banking.User.Services.Entity.DTO.UserDto"/>
+        <listEntry value="Banking.User.Services.CorrelationIdFilter"/>
+        <listEntry value="Banking.User.Services.Entity.User"/>
+        <listEntry value="Banking.User.Services.repository.UserCredentialRepository"/>
+        <listEntry value="Banking.User.Services.validate.imp.BeanUtil"/>
+        <listEntry value="Banking.User.Services.idempotency.Idempotent"/>
+        <listEntry value="Banking.User.Services.Entity.DTO.RegisterResp"/>
+        <listEntry value="Banking.User.Services.config.RedisConfig"/>
+        <listEntry value="Banking.User.Services.Entity.DTO.RegisterReq"/>
+        <listEntry value="Banking.User.Services.Exception.ResourceNotFoundException"/>
+        <listEntry value="Banking.User.Services.Entity.DTO.ProfileUpdateReq"/>
+        <listEntry value="Banking.User.Services.controller.UserProfileController"/>
+        <listEntry value="Banking.User.Services.Entity.geneator.CredID"/>
+        <listEntry value="Banking.User.Services.config.ValidationConfig"/>
+        <listEntry value="Banking.User.Services.Entity.DTO.mapper.UserMapper"/>
+        <listEntry value="Banking.User.Services.validate.imp.UniqUserNameValidate"/>
+    </listAttribute>
+    <listAttribute key="org.testng.eclipse.METHOD_TEST_LIST"/>
+    <listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
+    <stringAttribute key="org.testng.eclipse.PRE_DEFINED_LISTENERS" value=""/>
+    <intAttribute key="org.testng.eclipse.TYPE" value="1"/>
+</launchConfiguration>

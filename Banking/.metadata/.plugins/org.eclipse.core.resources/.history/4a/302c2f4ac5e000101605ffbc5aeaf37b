@@ -1,0 +1,506 @@
+2025-12-24 17:02:04 [background-preinit] INFO  : HV000001: Hibernate Validator 9.0.1.Final
+2025-12-24 17:02:04 [restartedMain] INFO  : Starting UserServicesApplication using Java 17.0.3.1 with PID 39968 (C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\User_Services\target\classes started by akash in C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\User_Services)
+2025-12-24 17:02:04 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2025-12-24 17:02:04 [restartedMain] INFO  : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-24 17:02:04 [restartedMain] INFO  : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-24 17:02:05 [restartedMain] INFO  : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 17:02:05 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 17:02:05 [restartedMain] INFO  : Finished Spring Data repository scanning in 164 ms. Found 2 JPA repository interfaces.
+2025-12-24 17:02:05 [restartedMain] INFO  : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 17:02:05 [restartedMain] INFO  : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 17:02:05 [restartedMain] INFO  : Spring Data Redis - Could not safely identify store assignment for repository candidate interface Banking.User.Services.repository.UserCredentialRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-24 17:02:05 [restartedMain] INFO  : Spring Data Redis - Could not safely identify store assignment for repository candidate interface Banking.User.Services.repository.User_service_repository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-24 17:02:05 [restartedMain] INFO  : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2025-12-24 17:02:06 [restartedMain] INFO  : Tomcat initialized with port 8082 (http)
+2025-12-24 17:02:06 [restartedMain] INFO  : Initializing ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:02:06 [restartedMain] INFO  : Starting service [Tomcat]
+2025-12-24 17:02:06 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-24 17:02:06 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 1925 ms
+2025-12-24 17:02:06 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 17:02:06 [restartedMain] INFO  : HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-24 17:02:07 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 17:02:07 [restartedMain] INFO  : HikariPool-1 - Starting...
+2025-12-24 17:02:07 [restartedMain] INFO  : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e86bde9
+2025-12-24 17:02:07 [restartedMain] INFO  : HikariPool-1 - Start completed.
+2025-12-24 17:02:07 [restartedMain] INFO  : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/banking_user_service]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.33
+	Default catalog/schema: banking_user_service/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 17:02:08 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 17:02:08 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 17:02:09 [restartedMain] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-24 17:02:09 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 17:02:10 [restartedMain] INFO  : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-24 17:02:10 [restartedMain] INFO  : Starting ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:02:10 [restartedMain] INFO  : Tomcat started on port 8082 (http) with context path '/'
+2025-12-24 17:02:10 [restartedMain] INFO  : Started UserServicesApplication in 6.675 seconds (process running for 7.363)
+2025-12-24 17:02:10 [RMI TCP Connection(9)-127.0.0.1] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-24 17:02:10 [RMI TCP Connection(9)-127.0.0.1] INFO  : Initializing Servlet 'dispatcherServlet'
+2025-12-24 17:02:10 [RMI TCP Connection(9)-127.0.0.1] INFO  : Completed initialization in 2 ms
+2025-12-24 17:03:45 [RMI TCP Connection(12)-127.0.0.1] INFO  : Application shutdown requested.
+2025-12-24 17:03:45 [RMI TCP Connection(12)-127.0.0.1] INFO  : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-24 17:03:45 [tomcat-shutdown] INFO  : Pausing ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:03:45 [tomcat-shutdown] INFO  : Graceful shutdown complete
+2025-12-24 17:03:45 [RMI TCP Connection(12)-127.0.0.1] INFO  : Stopping ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:03:45 [RMI TCP Connection(12)-127.0.0.1] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 17:03:45 [RMI TCP Connection(12)-127.0.0.1] INFO  : HikariPool-1 - Shutdown initiated...
+2025-12-24 17:03:45 [RMI TCP Connection(12)-127.0.0.1] INFO  : HikariPool-1 - Shutdown completed.
+2025-12-24 17:03:53 [background-preinit] [34mINFO [0;39m : HV000001: Hibernate Validator 9.0.1.Final
+2025-12-24 17:03:53 [restartedMain] [34mINFO [0;39m : Starting UserServicesApplication using Java 17.0.3.1 with PID 21288 (C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\User_Services\target\classes started by akash in C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\User_Services)
+2025-12-24 17:03:53 [restartedMain] [34mINFO [0;39m : No active profile set, falling back to 1 default profile: "default"
+2025-12-24 17:03:54 [restartedMain] [34mINFO [0;39m : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-24 17:03:54 [restartedMain] [34mINFO [0;39m : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-24 17:03:54 [restartedMain] [34mINFO [0;39m : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 17:03:54 [restartedMain] [34mINFO [0;39m : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 17:03:55 [restartedMain] [34mINFO [0;39m : Finished Spring Data repository scanning in 133 ms. Found 2 JPA repository interfaces.
+2025-12-24 17:03:55 [restartedMain] [34mINFO [0;39m : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 17:03:55 [restartedMain] [34mINFO [0;39m : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 17:03:55 [restartedMain] [34mINFO [0;39m : Spring Data Redis - Could not safely identify store assignment for repository candidate interface Banking.User.Services.repository.UserCredentialRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-24 17:03:55 [restartedMain] [34mINFO [0;39m : Spring Data Redis - Could not safely identify store assignment for repository candidate interface Banking.User.Services.repository.User_service_repository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-24 17:03:55 [restartedMain] [34mINFO [0;39m : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2025-12-24 17:03:55 [restartedMain] [34mINFO [0;39m : Tomcat initialized with port 8082 (http)
+2025-12-24 17:03:55 [restartedMain] [34mINFO [0;39m : Initializing ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:03:55 [restartedMain] [34mINFO [0;39m : Starting service [Tomcat]
+2025-12-24 17:03:55 [restartedMain] [34mINFO [0;39m : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-24 17:03:55 [restartedMain] [34mINFO [0;39m : Root WebApplicationContext: initialization completed in 1876 ms
+2025-12-24 17:03:56 [restartedMain] [34mINFO [0;39m : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 17:03:56 [restartedMain] [34mINFO [0;39m : HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-24 17:03:56 [restartedMain] [34mINFO [0;39m : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 17:03:56 [restartedMain] [34mINFO [0;39m : HikariPool-1 - Starting...
+2025-12-24 17:03:57 [restartedMain] [34mINFO [0;39m : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a372267
+2025-12-24 17:03:57 [restartedMain] [34mINFO [0;39m : HikariPool-1 - Start completed.
+2025-12-24 17:03:57 [restartedMain] [34mINFO [0;39m : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/banking_user_service]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.33
+	Default catalog/schema: banking_user_service/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 17:03:58 [restartedMain] [34mINFO [0;39m : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 17:03:58 [restartedMain] [34mINFO [0;39m : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 17:03:59 [restartedMain] [34mINFO [0;39m : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-24 17:03:59 [restartedMain] [31mWARN [0;39m : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 17:04:00 [restartedMain] [34mINFO [0;39m : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-24 17:04:00 [restartedMain] [34mINFO [0;39m : Starting ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:04:00 [restartedMain] [34mINFO [0;39m : Tomcat started on port 8082 (http) with context path '/'
+2025-12-24 17:04:00 [restartedMain] [34mINFO [0;39m : Started UserServicesApplication in 6.974 seconds (process running for 7.641)
+2025-12-24 17:04:00 [RMI TCP Connection(7)-127.0.0.1] [34mINFO [0;39m : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-24 17:04:00 [RMI TCP Connection(7)-127.0.0.1] [34mINFO [0;39m : Initializing Servlet 'dispatcherServlet'
+2025-12-24 17:04:00 [RMI TCP Connection(7)-127.0.0.1] [34mINFO [0;39m : Completed initialization in 4 ms
+2025-12-24 17:04:32 [File Watcher] [34mINFO [0;39m : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-12-24 17:04:32 [Thread-1] [34mINFO [0;39m : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-24 17:04:32 [tomcat-shutdown] [34mINFO [0;39m : Pausing ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:04:32 [tomcat-shutdown] [34mINFO [0;39m : Graceful shutdown complete
+2025-12-24 17:04:32 [Thread-1] [34mINFO [0;39m : Stopping ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:04:33 [Thread-1] [34mINFO [0;39m : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 17:04:33 [Thread-1] [34mINFO [0;39m : HikariPool-1 - Shutdown initiated...
+2025-12-24 17:04:33 [Thread-1] [34mINFO [0;39m : HikariPool-1 - Shutdown completed.
+2025-12-24 17:04:33 [restartedMain] INFO  : Starting UserServicesApplication using Java 17.0.3.1 with PID 21288 (C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\User_Services\target\classes started by akash in C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\User_Services)
+2025-12-24 17:04:33 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2025-12-24 17:04:33 [restartedMain] INFO  : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 17:04:33 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 17:04:33 [restartedMain] INFO  : Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2025-12-24 17:04:33 [restartedMain] INFO  : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 17:04:33 [restartedMain] INFO  : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 17:04:33 [restartedMain] INFO  : Spring Data Redis - Could not safely identify store assignment for repository candidate interface Banking.User.Services.repository.UserCredentialRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-24 17:04:33 [restartedMain] INFO  : Spring Data Redis - Could not safely identify store assignment for repository candidate interface Banking.User.Services.repository.User_service_repository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-24 17:04:33 [restartedMain] INFO  : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-12-24 17:04:33 [restartedMain] INFO  : Tomcat initialized with port 8082 (http)
+2025-12-24 17:04:33 [restartedMain] INFO  : Initializing ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:04:33 [restartedMain] INFO  : Starting service [Tomcat]
+2025-12-24 17:04:33 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-24 17:04:33 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 394 ms
+2025-12-24 17:04:33 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 17:04:33 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 17:04:33 [restartedMain] INFO  : HikariPool-2 - Starting...
+2025-12-24 17:04:33 [restartedMain] INFO  : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39e21f27
+2025-12-24 17:04:33 [restartedMain] INFO  : HikariPool-2 - Start completed.
+2025-12-24 17:04:33 [restartedMain] INFO  : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/banking_user_service]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.33
+	Default catalog/schema: banking_user_service/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 17:04:33 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 17:04:33 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 17:04:33 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 17:04:34 [restartedMain] INFO  : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-24 17:04:34 [restartedMain] INFO  : Starting ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:04:34 [restartedMain] INFO  : Tomcat started on port 8082 (http) with context path '/'
+2025-12-24 17:04:34 [restartedMain] INFO  : Started UserServicesApplication in 1.084 seconds (process running for 41.331)
+2025-12-24 17:04:34 [restartedMain] INFO  : Condition evaluation unchanged
+2025-12-24 17:27:31 [HikariPool-2:housekeeper] WARN  : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1m26s911ms875µs200ns).
+2025-12-24 17:28:08 [RMI TCP Connection(42)-127.0.0.1] INFO  : Application shutdown requested.
+2025-12-24 17:28:09 [RMI TCP Connection(42)-127.0.0.1] INFO  : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-24 17:28:09 [tomcat-shutdown] INFO  : Pausing ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:28:09 [tomcat-shutdown] INFO  : Graceful shutdown complete
+2025-12-24 17:28:09 [RMI TCP Connection(42)-127.0.0.1] INFO  : Stopping ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:28:09 [RMI TCP Connection(42)-127.0.0.1] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 17:28:09 [RMI TCP Connection(42)-127.0.0.1] INFO  : HikariPool-2 - Shutdown initiated...
+2025-12-24 17:28:09 [RMI TCP Connection(42)-127.0.0.1] INFO  : HikariPool-2 - Shutdown completed.
+2025-12-24 17:37:31 INFO  [] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2025-12-24 17:37:31 INFO  [] Banking.User.Services.UserServicesApplication - Starting UserServicesApplication using Java 17.0.3.1 with PID 17312 (C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\User_Services\target\classes started by akash in C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\User_Services)
+2025-12-24 17:37:31 INFO  [] Banking.User.Services.UserServicesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 17:37:31 INFO  [] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-24 17:37:31 INFO  [] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-24 17:37:32 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 17:37:32 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 17:37:33 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 228 ms. Found 2 JPA repository interfaces.
+2025-12-24 17:37:33 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 17:37:33 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 17:37:33 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface Banking.User.Services.repository.UserCredentialRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-24 17:37:33 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface Banking.User.Services.repository.User_service_repository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-24 17:37:33 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2025-12-24 17:37:34 INFO  [] org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-24 17:37:34 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:37:34 INFO  [] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 17:37:34 INFO  [] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-24 17:37:34 INFO  [] org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2898 ms
+2025-12-24 17:37:34 INFO  [] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 17:37:34 INFO  [] org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-24 17:37:35 INFO  [] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 17:37:35 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 17:37:35 INFO  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a372267
+2025-12-24 17:37:35 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 17:37:35 INFO  [] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/banking_user_service]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.33
+	Default catalog/schema: banking_user_service/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 17:37:36 INFO  [] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 17:37:36 INFO  [] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 17:37:36 INFO  [] org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-24 17:37:37 WARN  [] org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 17:37:38 INFO  [] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-24 17:37:38 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:37:38 INFO  [] org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-24 17:37:38 INFO  [] Banking.User.Services.UserServicesApplication - Started UserServicesApplication in 7.984 seconds (process running for 8.678)
+2025-12-24 17:37:38 INFO  [] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-24 17:37:38 INFO  [] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-24 17:37:38 INFO  [] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-12-24 17:41:53 INFO  [] Banking.User.Services.controller.AuthController - API CALL: Register user | username=oAkguttedrt
+2025-12-24 17:41:53 INFO  [] Banking.User.Services.controller.AuthController - API RESPONSE: User registered | userId=USER202512240001
+2025-12-24 17:46:03 INFO  [] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-12-24 17:46:03 INFO  [] org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-24 17:46:03 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:46:03 INFO  [] org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-24 17:46:03 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:46:03 INFO  [] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 17:46:03 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 17:46:03 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 17:46:04 INFO  [] Banking.User.Services.UserServicesApplication - Starting UserServicesApplication using Java 17.0.3.1 with PID 17312 (C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\User_Services\target\classes started by akash in C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\User_Services)
+2025-12-24 17:46:04 INFO  [] Banking.User.Services.UserServicesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 17:46:04 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 17:46:04 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 17:46:04 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+2025-12-24 17:46:04 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 17:46:04 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 17:46:04 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface Banking.User.Services.repository.UserCredentialRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-24 17:46:04 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface Banking.User.Services.repository.User_service_repository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-24 17:46:04 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-12-24 17:46:05 INFO  [] org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-24 17:46:05 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:46:05 INFO  [] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 17:46:05 INFO  [] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-24 17:46:05 INFO  [] org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 761 ms
+2025-12-24 17:46:05 INFO  [] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 17:46:05 INFO  [] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 17:46:05 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 17:46:06 INFO  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4bd757a8
+2025-12-24 17:46:06 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 17:46:06 INFO  [] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/banking_user_service]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.33
+	Default catalog/schema: banking_user_service/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 17:46:06 INFO  [] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 17:46:06 INFO  [] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 17:46:06 WARN  [] org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 17:46:07 INFO  [] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-24 17:46:07 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:46:07 INFO  [] org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-24 17:46:07 INFO  [] Banking.User.Services.UserServicesApplication - Started UserServicesApplication in 2.828 seconds (process running for 517.289)
+2025-12-24 17:46:07 INFO  [] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-12-24 17:46:39 INFO  [] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-12-24 17:46:39 INFO  [] org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-24 17:46:39 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:46:39 INFO  [] org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-24 17:46:39 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:46:39 INFO  [] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 17:46:39 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 17:46:39 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 17:46:39 INFO  [] Banking.User.Services.UserServicesApplication - Starting UserServicesApplication using Java 17.0.3.1 with PID 17312 (C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\User_Services\target\classes started by akash in C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\User_Services)
+2025-12-24 17:46:39 INFO  [] Banking.User.Services.UserServicesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 17:46:40 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 17:46:40 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 17:46:40 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2025-12-24 17:46:40 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 17:46:40 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 17:46:40 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface Banking.User.Services.repository.UserCredentialRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-24 17:46:40 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface Banking.User.Services.repository.User_service_repository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-24 17:46:40 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-12-24 17:46:40 INFO  [] org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-24 17:46:40 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:46:40 INFO  [] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 17:46:40 INFO  [] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-24 17:46:40 INFO  [] org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 412 ms
+2025-12-24 17:46:40 INFO  [] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 17:46:40 INFO  [] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 17:46:40 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2025-12-24 17:46:40 INFO  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50ce68ca
+2025-12-24 17:46:40 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2025-12-24 17:46:40 INFO  [] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/banking_user_service]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.33
+	Default catalog/schema: banking_user_service/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 17:46:40 INFO  [] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 17:46:40 INFO  [] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 17:46:40 WARN  [] org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 17:46:40 INFO  [] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-24 17:46:40 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:46:40 INFO  [] org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-24 17:46:40 INFO  [] Banking.User.Services.UserServicesApplication - Started UserServicesApplication in 1.067 seconds (process running for 551.002)
+2025-12-24 17:46:40 INFO  [] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-12-24 17:46:55 INFO  [] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-24 17:46:55 INFO  [] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-24 17:46:55 INFO  [] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-12-24 17:46:55 INFO  [1cd963a5-da4f-4045-a20b-30d2d018dce3] Banking.User.Services.controller.AuthController - API CALL: Register user | username=oAkgouttedrt
+2025-12-24 17:46:55 INFO  [1cd963a5-da4f-4045-a20b-30d2d018dce3] Banking.User.Services.controller.AuthController - API RESPONSE: User registered | userId=USER202512240002
+2025-12-24 17:49:45 INFO  [] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-12-24 17:49:45 INFO  [] org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-24 17:49:45 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:49:45 INFO  [] org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-24 17:49:45 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:49:45 INFO  [] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 17:49:45 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-12-24 17:49:45 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2025-12-24 17:49:45 INFO  [] Banking.User.Services.UserServicesApplication - Starting UserServicesApplication using Java 17.0.3.1 with PID 17312 (C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\User_Services\target\classes started by akash in C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\User_Services)
+2025-12-24 17:49:45 INFO  [] Banking.User.Services.UserServicesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 17:49:45 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 17:49:45 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 17:49:45 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2025-12-24 17:49:45 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 17:49:45 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 17:49:45 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface Banking.User.Services.repository.UserCredentialRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-24 17:49:45 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface Banking.User.Services.repository.User_service_repository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-24 17:49:45 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-12-24 17:49:46 INFO  [] org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-24 17:49:46 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:49:46 INFO  [] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 17:49:46 INFO  [] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-24 17:49:46 INFO  [] org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 484 ms
+2025-12-24 17:49:46 INFO  [] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 17:49:46 INFO  [] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 17:49:46 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2025-12-24 17:49:46 INFO  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@196707b1
+2025-12-24 17:49:46 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2025-12-24 17:49:46 INFO  [] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/banking_user_service]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.33
+	Default catalog/schema: banking_user_service/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 17:49:46 INFO  [] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 17:49:46 INFO  [] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 17:49:46 WARN  [] org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 17:49:47 INFO  [] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-24 17:49:47 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:49:47 INFO  [] org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-24 17:49:47 INFO  [] Banking.User.Services.UserServicesApplication - Started UserServicesApplication in 1.726 seconds (process running for 737.455)
+2025-12-24 17:49:47 INFO  [] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-12-24 17:55:36 INFO  [] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-12-24 17:55:36 INFO  [] org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-24 17:55:36 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:55:36 INFO  [] org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-24 17:55:36 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:55:36 INFO  [] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 17:55:36 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2025-12-24 17:55:36 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2025-12-24 17:55:37 INFO  [] Banking.User.Services.UserServicesApplication - Starting UserServicesApplication using Java 17.0.3.1 with PID 17312 (C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\User_Services\target\classes started by akash in C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\User_Services)
+2025-12-24 17:55:37 INFO  [] Banking.User.Services.UserServicesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 17:55:38 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 17:55:38 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 17:55:38 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2025-12-24 17:55:38 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 17:55:38 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 17:55:38 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface Banking.User.Services.repository.UserCredentialRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-24 17:55:38 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface Banking.User.Services.repository.User_service_repository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-24 17:55:38 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-12-24 17:55:38 INFO  [] org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-24 17:55:38 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:55:38 INFO  [] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 17:55:38 INFO  [] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-24 17:55:38 INFO  [] org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 708 ms
+2025-12-24 17:55:38 INFO  [] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 17:55:38 INFO  [] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 17:55:38 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2025-12-24 17:55:38 INFO  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@685979a7
+2025-12-24 17:55:38 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2025-12-24 17:55:38 INFO  [] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/banking_user_service]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.33
+	Default catalog/schema: banking_user_service/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 17:55:38 INFO  [] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 17:55:39 INFO  [] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 17:55:39 WARN  [] org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 17:55:39 INFO  [] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-24 17:55:39 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-12-24 17:55:39 INFO  [] org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-24 17:55:39 INFO  [] Banking.User.Services.UserServicesApplication - Started UserServicesApplication in 1.786 seconds (process running for 1089.684)
+2025-12-24 17:55:39 INFO  [] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-12-24 17:55:47 INFO  [] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-24 17:55:47 INFO  [] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-24 17:55:47 INFO  [] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2025-12-24 17:55:47 WARN  [157109dd-7c2e-4fff-9574-4e712fdac81d] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<Banking.User.Services.Entity.DTO.RegisterResp> Banking.User.Services.controller.AuthController.register(Banking.User.Services.Entity.DTO.RegisterReq): [Field error in object 'registerReq' on field 'username': rejected value [oAkgouttedrt]; codes [UniqUserName.registerReq.username,UniqUserName.username,UniqUserName.java.lang.String,UniqUserName]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerReq.username,username]; arguments []; default message [username]]; default message [User name is already exits]] ]
+2025-12-24 17:56:18 WARN  [d2d6b17e-1483-472a-a1af-420797ce343e] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<Banking.User.Services.Entity.DTO.RegisterResp> Banking.User.Services.controller.AuthController.register(Banking.User.Services.Entity.DTO.RegisterReq): [Field error in object 'registerReq' on field 'username': rejected value [oAkgouttedrt]; codes [UniqUserName.registerReq.username,UniqUserName.username,UniqUserName.java.lang.String,UniqUserName]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerReq.username,username]; arguments []; default message [username]]; default message [User name is already exits]] ]
+2025-12-24 18:06:27 INFO  [] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-12-24 18:06:27 INFO  [] org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-24 18:06:27 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8082"]
+2025-12-24 18:06:27 INFO  [] org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-24 18:06:27 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8082"]
+2025-12-24 18:06:27 INFO  [] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 18:06:27 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2025-12-24 18:06:27 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2025-12-24 18:06:28 INFO  [] Banking.User.Services.UserServicesApplication - Starting UserServicesApplication using Java 17.0.3.1 with PID 17312 (C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\User_Services\target\classes started by akash in C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\User_Services)
+2025-12-24 18:06:28 INFO  [] Banking.User.Services.UserServicesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 18:06:28 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 18:06:28 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 18:06:28 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2025-12-24 18:06:28 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 18:06:28 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 18:06:28 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface Banking.User.Services.repository.UserCredentialRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-24 18:06:28 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface Banking.User.Services.repository.User_service_repository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-24 18:06:28 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-12-24 18:06:28 INFO  [] org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-24 18:06:28 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-12-24 18:06:28 INFO  [] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 18:06:28 INFO  [] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-24 18:06:28 INFO  [] org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 636 ms
+2025-12-24 18:06:28 INFO  [] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 18:06:28 INFO  [] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 18:06:28 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2025-12-24 18:06:28 INFO  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7dbde5fa
+2025-12-24 18:06:28 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2025-12-24 18:06:28 INFO  [] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/banking_user_service]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.33
+	Default catalog/schema: banking_user_service/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 18:06:29 INFO  [] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 18:06:29 INFO  [] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 18:06:29 WARN  [] org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 18:06:29 INFO  [] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-24 18:06:29 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-12-24 18:06:29 INFO  [] org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-24 18:06:29 INFO  [] Banking.User.Services.UserServicesApplication - Started UserServicesApplication in 1.585 seconds (process running for 1739.671)
+2025-12-24 18:06:29 INFO  [] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-12-24 18:07:12 INFO  [] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-12-24 18:07:12 INFO  [] org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-24 18:07:12 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8082"]
+2025-12-24 18:07:12 INFO  [] org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-24 18:07:12 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8082"]
+2025-12-24 18:07:12 INFO  [] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 18:07:12 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2025-12-24 18:07:12 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2025-12-24 18:07:13 INFO  [] Banking.User.Services.UserServicesApplication - Starting UserServicesApplication using Java 17.0.3.1 with PID 17312 (C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\User_Services\target\classes started by akash in C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\User_Services)
+2025-12-24 18:07:13 INFO  [] Banking.User.Services.UserServicesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 18:07:13 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 18:07:13 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 18:07:13 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2025-12-24 18:07:13 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-24 18:07:13 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-24 18:07:13 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface Banking.User.Services.repository.UserCredentialRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-24 18:07:13 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface Banking.User.Services.repository.User_service_repository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-24 18:07:13 INFO  [] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-12-24 18:07:13 INFO  [] org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-24 18:07:13 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-12-24 18:07:13 INFO  [] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 18:07:13 INFO  [] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-24 18:07:13 INFO  [] org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 353 ms
+2025-12-24 18:07:13 INFO  [] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 18:07:13 INFO  [] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 18:07:13 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2025-12-24 18:07:13 INFO  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1128d01
+2025-12-24 18:07:13 INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2025-12-24 18:07:13 INFO  [] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/banking_user_service]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.33
+	Default catalog/schema: banking_user_service/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 18:07:13 INFO  [] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 18:07:13 INFO  [] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 18:07:13 WARN  [] org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 18:07:13 INFO  [] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-24 18:07:13 INFO  [] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-12-24 18:07:13 INFO  [] org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-24 18:07:13 INFO  [] Banking.User.Services.UserServicesApplication - Started UserServicesApplication in 0.946 seconds (process running for 1784.082)
+2025-12-24 18:07:13 INFO  [] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged

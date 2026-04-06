@@ -1,0 +1,51 @@
+2026-01-05 21:16:15 INFO  [correlationId=] [traceId= spanId=] Transaction_Service.com.TransactionServiceApplication - Starting TransactionServiceApplication using Java 17.0.3.1 with PID 34716 (C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\Transaction_Service\target\classes started by akash in C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\Transaction_Service)
+2026-01-05 21:16:15 INFO  [correlationId=] [traceId= spanId=] Transaction_Service.com.TransactionServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-05 21:16:15 INFO  [correlationId=] [traceId= spanId=] org.springframework.cloud.config.client.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8002
+2026-01-05 21:16:15 INFO  [correlationId=] [traceId= spanId=] org.springframework.cloud.config.client.ConfigServerConfigDataLoader - Located environment: name=Transaction_Service, profiles=[default], label=null, version=a05ea05159fa0aa328a29eecc70d8ff5543ff2e5, state=
+2026-01-05 21:16:16 INFO  [correlationId=] [traceId= spanId=] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-05 21:16:16 INFO  [correlationId=] [traceId= spanId=] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
+2026-01-05 21:16:16 INFO  [correlationId=] [traceId= spanId=] org.springframework.cloud.context.scope.GenericScope - BeanFactory id=4211d30d-1103-306d-a482-16998226206a
+2026-01-05 21:16:16 INFO  [correlationId=] [traceId= spanId=] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8084 (http)
+2026-01-05 21:16:16 INFO  [correlationId=] [traceId= spanId=] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2026-01-05 21:16:16 INFO  [correlationId=] [traceId= spanId=] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-05 21:16:16 INFO  [correlationId=] [traceId= spanId=] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-05 21:16:16 INFO  [correlationId=] [traceId= spanId=] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-05 21:16:16 INFO  [correlationId=] [traceId= spanId=] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 936 ms
+2026-01-05 21:16:16 INFO  [correlationId=] [traceId= spanId=] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-05 21:16:16 INFO  [correlationId=] [traceId= spanId=] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-05 21:16:16 INFO  [correlationId=] [traceId= spanId=] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-05 21:16:16 INFO  [correlationId=] [traceId= spanId=] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-01-05 21:16:16 INFO  [correlationId=] [traceId= spanId=] com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5004c5c2
+2026-01-05 21:16:16 INFO  [correlationId=] [traceId= spanId=] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-01-05 21:16:16 INFO  [correlationId=] [traceId= spanId=] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-05 21:16:16 INFO  [correlationId=] [traceId= spanId=] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-05 21:16:16 INFO  [correlationId=] [traceId= spanId=] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-05 21:16:16 WARN  [correlationId=] [traceId= spanId=] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-05 21:16:16 WARN  [correlationId=] [traceId= spanId=] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-01-05 21:16:17 INFO  [correlationId=] [traceId= spanId=] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-05 21:16:17 INFO  [correlationId=] [traceId= spanId=] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2026-01-05 21:16:17 INFO  [correlationId=] [traceId= spanId=] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8084 (http) with context path '/'
+2026-01-05 21:16:17 INFO  [correlationId=] [traceId= spanId=] Transaction_Service.com.TransactionServiceApplication - Started TransactionServiceApplication in 4.185 seconds (process running for 1080.038)
+2026-01-05 21:16:17 INFO  [correlationId=] [traceId= spanId=] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-01-05 21:17:17 INFO  [correlationId=] [traceId= spanId=] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-05 21:17:17 INFO  [correlationId=] [traceId= spanId=] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-05 21:17:17 INFO  [correlationId=] [traceId= spanId=] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-01-05 21:17:17 INFO  [correlationId=3dea65ac-86e5-40a3-9afd-3c8e7e327468] [traceId=acc6fce904cd4abd653fb0848d0617c6 spanId=06982ee3e1a64723] Transaction_Service.com.Controller.TransactionController - Transfer request received | fromAccount=ACCO202512180001 | toAccount=ACCO202512180002 | amount=60
+2026-01-05 21:17:17 INFO  [correlationId=3dea65ac-86e5-40a3-9afd-3c8e7e327468] [traceId=acc6fce904cd4abd653fb0848d0617c6 spanId=06982ee3e1a64723] Transaction_Service.com.Service.imp.Transaction_Service_imp - Starting transfer | fromAccount=ACCO202512180001 | toAccount=ACCO202512180002 | amount=60
+2026-01-05 21:17:17 INFO  [correlationId=3dea65ac-86e5-40a3-9afd-3c8e7e327468] [traceId=acc6fce904cd4abd653fb0848d0617c6 spanId=06982ee3e1a64723] Transaction_Service.com.Service.imp.Transaction_Service_imp - Transfer successful | referenceId=d4822cf5-98c5-4638-8135-086f0add71dc | fromAccount=ACCO202512180001 | toAccount=ACCO202512180002
+2026-01-05 21:17:17 INFO  [correlationId=3dea65ac-86e5-40a3-9afd-3c8e7e327468] [traceId=acc6fce904cd4abd653fb0848d0617c6 spanId=06982ee3e1a64723] Transaction_Service.com.Controller.TransactionController - Transfer successful | transactionId=TRAN202601050005 | fromAccount=ACCO202512180001 | toAccount=ACCO202512180002 | amount=60
+2026-01-05 21:19:22 INFO  [correlationId=] [traceId= spanId=] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-01-05 21:19:22 INFO  [correlationId=] [traceId= spanId=] org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-05 21:19:22 INFO  [correlationId=] [traceId= spanId=] org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8084"]
+2026-01-05 21:19:22 INFO  [correlationId=] [traceId= spanId=] org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-05 21:19:22 INFO  [correlationId=] [traceId= spanId=] org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8084"]
+2026-01-05 21:19:22 INFO  [correlationId=] [traceId= spanId=] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-05 21:19:22 INFO  [correlationId=] [traceId= spanId=] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-01-05 21:19:22 INFO  [correlationId=] [traceId= spanId=] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.

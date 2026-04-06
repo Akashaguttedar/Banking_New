@@ -1,0 +1,167 @@
+2026-01-01 23:41:14 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-01-01 23:41:14 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                Banking.User.Services.UserServicesApplication - Starting UserServicesApplication using Java 17.0.3.1 with PID 53588 (C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\User_Services\target\classes started by akash in C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\User_Services)
+2026-01-01 23:41:14 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                Banking.User.Services.UserServicesApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-01 23:41:14 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-01 23:41:14 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-01 23:41:16 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-01 23:41:16 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-01 23:41:16 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 190 ms. Found 2 JPA repository interfaces.
+2026-01-01 23:41:16 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-01 23:41:16 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-01-01 23:41:16 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface Banking.User.Services.repository.UserCredentialRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-01-01 23:41:16 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface Banking.User.Services.repository.User_service_repository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-01-01 23:41:16 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2026-01-01 23:41:17 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-01-01 23:41:17 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-01-01 23:41:17 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-01 23:41:17 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-01 23:41:17 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-01 23:41:17 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2979 ms
+2026-01-01 23:41:17 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-01 23:41:17 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.39.Final
+2026-01-01 23:41:18 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-01 23:41:18 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-01 23:41:18 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-01 23:41:19 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d10dc76
+2026-01-01 23:41:19 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-01 23:41:19 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-01 23:41:20 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-01 23:41:20 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-01 23:41:21 WARN 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-01 23:41:22 WARN 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-01-01 23:41:22 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-01 23:41:22 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-01-01 23:41:22 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-01-01 23:41:22 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                Banking.User.Services.UserServicesApplication - Started UserServicesApplication in 9.287 seconds (process running for 10.754)
+2026-01-01 23:41:23 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-01 23:41:23 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-01 23:41:23 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-01-01 23:41:30 WARN 
+                [correlationId=7ee7496b-5f49-4843-a77b-244c217b114f]
+                [traceId=d28bf4a9b01e5c57dcdfdd9787ff84a4 spanId=9aaab6318d63d237]
+                org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<Banking.User.Services.Entity.DTO.RegisterResp> Banking.User.Services.controller.AuthController.register(Banking.User.Services.Entity.DTO.RegisterReq): [Field error in object 'registerReq' on field 'username': rejected value [Akgutter]; codes [UniqUserName.registerReq.username,UniqUserName.username,UniqUserName.java.lang.String,UniqUserName]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerReq.username,username]; arguments []; default message [username]]; default message [User name is already exits]] ]
+2026-01-01 23:41:48 WARN 
+                [correlationId=7c3bc4a4-bb18-4b01-aca3-f67721ceee65]
+                [traceId=4052f4f6aa2ba883aae98c13b16f5511 spanId=afa98d2ac411fcd1]
+                org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<Banking.User.Services.Entity.DTO.RegisterResp> Banking.User.Services.controller.AuthController.register(Banking.User.Services.Entity.DTO.RegisterReq) with 3 errors: [Field error in object 'registerReq' on field 'username': rejected value []; codes [Pattern.registerReq.username,Pattern.username,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerReq.username,username]; arguments []; default message [username],[Ljakarta.validation.constraints.Pattern$Flag;@faee553,^[^\s]+$]; default message [Username must not contain spaces]] [Field error in object 'registerReq' on field 'username': rejected value []; codes [NotBlank.registerReq.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerReq.username,username]; arguments []; default message [username]]; default message [User name should not be blank]] [Field error in object 'registerReq' on field 'username': rejected value []; codes [Size.registerReq.username,Size.username,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerReq.username,username]; arguments []; default message [username],100,3]; default message [min 3 char and max 100 char]] ]

@@ -1,0 +1,45 @@
+<configuration>
+
+    <!-- CENTRAL LOG LOCATION -->
+    <property name="LOG_PATH" value="./logs"/>
+
+    <!-- SERVICE NAME (override per service) -->
+    <property name="SERVICE_NAME" value="User_service"/>
+
+    <appender name="ConsoleOutput"
+        class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>
+                %white(%d{ISO8601}) %highlight(%-5level) [%yellow(%t)] : %msg%n%throwable
+            </Pattern>
+        </layout>
+    </appender>
+    <!-- FILE APPENDER -->
+    <appender name="FILE"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+
+        <file>${LOG_PATH}/${SERVICE_NAME}.log</file>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/${SERVICE_NAME}-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>
+                %d{yyyy-MM-dd HH:mm:ss} %-5level
+                [correlationId=%X{correlationId}]
+                [traceId=%X{traceId} spanId=%X{spanId}]
+                %logger - %msg%n
+            </pattern>
+        </encoder>
+
+    </appender>
+
+    <!-- ROOT LOGGER -->
+    <root level="INFO">
+     <appender-ref ref="ConsoleOutput"/>
+        <appender-ref ref="FILE"/>
+    </root>
+
+</configuration>

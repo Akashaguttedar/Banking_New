@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;FilterConfig.java&apos; to &apos;Account_Service/src/main/java/Account_Service.com.config&apos;&#x0D;&#x0A;- Original project: &apos;Transaction_Service&apos;&#x0D;&#x0A;- Destination element: &apos;Account_Service/src/main/java/Account_Service.com.config&apos;&#x0D;&#x0A;- Original element: &apos;Transaction_Service.com.config.FilterConfig.java&apos;" description="Copy compilation unit" destination="=Account_Service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;Account_Service.com.config" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;Transaction_Service.com.config{FilterConfig.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1766738319677" units="1" version="1.0"/>
+</session>

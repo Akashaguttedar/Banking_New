@@ -1,0 +1,451 @@
+2025-12-29 17:33:24 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2025-12-29 17:33:24 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                Account_Service.com.AccountServiceApplication - Starting AccountServiceApplication using Java 17.0.3.1 with PID 53648 (C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\Account_Service\target\classes started by akash in C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\Account_Service)
+2025-12-29 17:33:24 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                Account_Service.com.AccountServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 17:33:24 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-29 17:33:24 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-29 17:33:26 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-29 17:33:26 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 130 ms. Found 1 JPA repository interface.
+2025-12-29 17:33:28 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2025-12-29 17:33:28 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2025-12-29 17:33:28 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 17:33:28 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-29 17:33:28 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3733 ms
+2025-12-29 17:33:28 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-29 17:33:28 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-29 17:33:29 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-29 17:33:29 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 17:33:29 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ae6953b
+2025-12-29 17:33:29 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 17:33:29 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/banking_user_service]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.33
+	Default catalog/schema: banking_user_service/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-29 17:33:30 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-29 17:33:31 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-29 17:33:31 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-29 17:33:32 WARN 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-29 17:33:32 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-29 17:33:32 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2025-12-29 17:33:32 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2025-12-29 17:33:32 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                Account_Service.com.AccountServiceApplication - Started AccountServiceApplication in 8.899 seconds (process running for 9.669)
+2025-12-29 17:33:33 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 17:33:33 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 17:33:33 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-29 17:33:37 INFO 
+                [correlationId=5ffd0def-201c-424e-823a-a22e2c197dff]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180002 | balance=6900.00
+2025-12-29 17:33:37 INFO 
+                [correlationId=5ffd0def-201c-424e-823a-a22e2c197dff]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180002 | newBalance=6900.00
+2025-12-29 17:33:37 INFO 
+                [correlationId=5ffd0def-201c-424e-823a-a22e2c197dff]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180002 | balance=6900.00
+2025-12-29 17:33:37 INFO 
+                [correlationId=5ffd0def-201c-424e-823a-a22e2c197dff]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180002 | balance=6900.00
+2025-12-29 17:33:37 INFO 
+                [correlationId=5ffd0def-201c-424e-823a-a22e2c197dff]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180001 | balance=59580.00
+2025-12-29 17:33:37 INFO 
+                [correlationId=5ffd0def-201c-424e-823a-a22e2c197dff]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180001 | newBalance=59580.00
+2025-12-29 17:33:37 INFO 
+                [correlationId=5ffd0def-201c-424e-823a-a22e2c197dff]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180001 | balance=59580.00
+2025-12-29 17:33:37 INFO 
+                [correlationId=5ffd0def-201c-424e-823a-a22e2c197dff]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180001 | balance=59580.00
+2025-12-29 17:39:37 INFO 
+                [correlationId=fa042296-86c6-49f0-8f3e-ce709fd261d0]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180002 | balance=6960.00
+2025-12-29 17:39:37 INFO 
+                [correlationId=fa042296-86c6-49f0-8f3e-ce709fd261d0]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180002 | newBalance=6960.00
+2025-12-29 17:39:37 INFO 
+                [correlationId=fa042296-86c6-49f0-8f3e-ce709fd261d0]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180002 | balance=6960.00
+2025-12-29 17:39:37 INFO 
+                [correlationId=fa042296-86c6-49f0-8f3e-ce709fd261d0]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180002 | balance=6960.00
+2025-12-29 17:39:37 INFO 
+                [correlationId=fa042296-86c6-49f0-8f3e-ce709fd261d0]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180001 | balance=59520.00
+2025-12-29 17:39:37 INFO 
+                [correlationId=fa042296-86c6-49f0-8f3e-ce709fd261d0]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180001 | newBalance=59520.00
+2025-12-29 17:39:37 INFO 
+                [correlationId=fa042296-86c6-49f0-8f3e-ce709fd261d0]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180001 | balance=59520.00
+2025-12-29 17:39:37 INFO 
+                [correlationId=fa042296-86c6-49f0-8f3e-ce709fd261d0]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180001 | balance=59520.00
+2025-12-29 17:40:50 INFO 
+                [correlationId=c3b4fb43-dc74-42f0-a25a-809abc35ecd3]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180002 | balance=7020.00
+2025-12-29 17:40:50 INFO 
+                [correlationId=c3b4fb43-dc74-42f0-a25a-809abc35ecd3]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180002 | newBalance=7020.00
+2025-12-29 17:40:50 INFO 
+                [correlationId=c3b4fb43-dc74-42f0-a25a-809abc35ecd3]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180002 | balance=7020.00
+2025-12-29 17:40:50 INFO 
+                [correlationId=c3b4fb43-dc74-42f0-a25a-809abc35ecd3]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180002 | balance=7020.00
+2025-12-29 17:40:50 INFO 
+                [correlationId=c3b4fb43-dc74-42f0-a25a-809abc35ecd3]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180001 | balance=59460.00
+2025-12-29 17:40:50 INFO 
+                [correlationId=c3b4fb43-dc74-42f0-a25a-809abc35ecd3]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180001 | newBalance=59460.00
+2025-12-29 17:40:50 INFO 
+                [correlationId=c3b4fb43-dc74-42f0-a25a-809abc35ecd3]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180001 | balance=59460.00
+2025-12-29 17:40:51 INFO 
+                [correlationId=c3b4fb43-dc74-42f0-a25a-809abc35ecd3]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180001 | balance=59460.00
+2025-12-29 17:42:09 INFO 
+                [correlationId=9c96a967-c6ab-47f6-97c8-63292f09f09b]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180002 | balance=7080.00
+2025-12-29 17:42:09 INFO 
+                [correlationId=9c96a967-c6ab-47f6-97c8-63292f09f09b]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180002 | newBalance=7080.00
+2025-12-29 17:42:09 INFO 
+                [correlationId=9c96a967-c6ab-47f6-97c8-63292f09f09b]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180002 | balance=7080.00
+2025-12-29 17:42:09 INFO 
+                [correlationId=9c96a967-c6ab-47f6-97c8-63292f09f09b]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180002 | balance=7080.00
+2025-12-29 17:42:09 INFO 
+                [correlationId=9c96a967-c6ab-47f6-97c8-63292f09f09b]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180001 | balance=59400.00
+2025-12-29 17:42:09 INFO 
+                [correlationId=9c96a967-c6ab-47f6-97c8-63292f09f09b]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180001 | newBalance=59400.00
+2025-12-29 17:42:09 INFO 
+                [correlationId=9c96a967-c6ab-47f6-97c8-63292f09f09b]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180001 | balance=59400.00
+2025-12-29 17:42:09 INFO 
+                [correlationId=9c96a967-c6ab-47f6-97c8-63292f09f09b]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180001 | balance=59400.00
+2025-12-29 17:43:26 INFO 
+                [correlationId=e91e6cad-d588-41ac-85cf-71a0d0ca768f]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180002 | balance=7140.00
+2025-12-29 17:43:26 INFO 
+                [correlationId=e91e6cad-d588-41ac-85cf-71a0d0ca768f]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180002 | newBalance=7140.00
+2025-12-29 17:43:26 INFO 
+                [correlationId=e91e6cad-d588-41ac-85cf-71a0d0ca768f]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180002 | balance=7140.00
+2025-12-29 17:43:26 INFO 
+                [correlationId=e91e6cad-d588-41ac-85cf-71a0d0ca768f]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180002 | balance=7140.00
+2025-12-29 17:43:26 INFO 
+                [correlationId=e91e6cad-d588-41ac-85cf-71a0d0ca768f]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180001 | balance=59340.00
+2025-12-29 17:43:26 INFO 
+                [correlationId=e91e6cad-d588-41ac-85cf-71a0d0ca768f]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180001 | newBalance=59340.00
+2025-12-29 17:43:26 INFO 
+                [correlationId=e91e6cad-d588-41ac-85cf-71a0d0ca768f]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180001 | balance=59340.00
+2025-12-29 17:43:26 INFO 
+                [correlationId=e91e6cad-d588-41ac-85cf-71a0d0ca768f]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180001 | balance=59340.00
+2025-12-29 17:44:55 INFO 
+                [correlationId=0912b8e4-99d1-441e-9cad-cb46cb6dd0e0]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180002 | balance=7200.00
+2025-12-29 17:44:55 INFO 
+                [correlationId=0912b8e4-99d1-441e-9cad-cb46cb6dd0e0]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180002 | newBalance=7200.00
+2025-12-29 17:44:55 INFO 
+                [correlationId=0912b8e4-99d1-441e-9cad-cb46cb6dd0e0]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180002 | balance=7200.00
+2025-12-29 17:44:55 INFO 
+                [correlationId=0912b8e4-99d1-441e-9cad-cb46cb6dd0e0]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180002 | balance=7200.00
+2025-12-29 17:44:55 INFO 
+                [correlationId=0912b8e4-99d1-441e-9cad-cb46cb6dd0e0]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180001 | balance=59280.00
+2025-12-29 17:44:55 INFO 
+                [correlationId=0912b8e4-99d1-441e-9cad-cb46cb6dd0e0]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180001 | newBalance=59280.00
+2025-12-29 17:44:55 INFO 
+                [correlationId=0912b8e4-99d1-441e-9cad-cb46cb6dd0e0]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180001 | balance=59280.00
+2025-12-29 17:44:55 INFO 
+                [correlationId=0912b8e4-99d1-441e-9cad-cb46cb6dd0e0]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180001 | balance=59280.00
+2025-12-29 18:01:41 INFO 
+                [correlationId=bbdc0373-5a71-4edc-aa07-3a7fc8fc8a2b]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180002 | balance=7260.00
+2025-12-29 18:01:41 INFO 
+                [correlationId=bbdc0373-5a71-4edc-aa07-3a7fc8fc8a2b]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180002 | newBalance=7260.00
+2025-12-29 18:01:41 INFO 
+                [correlationId=bbdc0373-5a71-4edc-aa07-3a7fc8fc8a2b]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180002 | balance=7260.00
+2025-12-29 18:01:41 INFO 
+                [correlationId=bbdc0373-5a71-4edc-aa07-3a7fc8fc8a2b]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180002 | balance=7260.00
+2025-12-29 18:01:41 INFO 
+                [correlationId=bbdc0373-5a71-4edc-aa07-3a7fc8fc8a2b]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180001 | balance=59220.00
+2025-12-29 18:01:41 INFO 
+                [correlationId=bbdc0373-5a71-4edc-aa07-3a7fc8fc8a2b]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180001 | newBalance=59220.00
+2025-12-29 18:01:41 INFO 
+                [correlationId=bbdc0373-5a71-4edc-aa07-3a7fc8fc8a2b]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180001 | balance=59220.00
+2025-12-29 18:01:41 INFO 
+                [correlationId=bbdc0373-5a71-4edc-aa07-3a7fc8fc8a2b]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180001 | balance=59220.00
+2025-12-29 18:05:07 INFO 
+                [correlationId=215c087e-ee69-4ff5-849f-7b9f60d48e15]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180002 | balance=7320.00
+2025-12-29 18:05:07 INFO 
+                [correlationId=215c087e-ee69-4ff5-849f-7b9f60d48e15]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180002 | newBalance=7320.00
+2025-12-29 18:05:07 INFO 
+                [correlationId=215c087e-ee69-4ff5-849f-7b9f60d48e15]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180002 | balance=7320.00
+2025-12-29 18:05:07 INFO 
+                [correlationId=215c087e-ee69-4ff5-849f-7b9f60d48e15]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180002 | balance=7320.00
+2025-12-29 18:05:07 INFO 
+                [correlationId=215c087e-ee69-4ff5-849f-7b9f60d48e15]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180001 | balance=59160.00
+2025-12-29 18:05:07 INFO 
+                [correlationId=215c087e-ee69-4ff5-849f-7b9f60d48e15]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180001 | newBalance=59160.00
+2025-12-29 18:05:07 INFO 
+                [correlationId=215c087e-ee69-4ff5-849f-7b9f60d48e15]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180001 | balance=59160.00
+2025-12-29 18:05:07 INFO 
+                [correlationId=215c087e-ee69-4ff5-849f-7b9f60d48e15]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180001 | balance=59160.00
+2025-12-29 18:06:27 INFO 
+                [correlationId=f43a5205-3f4e-4360-928e-59095496c1cf]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180002 | balance=7380.00
+2025-12-29 18:06:27 INFO 
+                [correlationId=f43a5205-3f4e-4360-928e-59095496c1cf]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180002 | newBalance=7380.00
+2025-12-29 18:06:27 INFO 
+                [correlationId=f43a5205-3f4e-4360-928e-59095496c1cf]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180002 | balance=7380.00
+2025-12-29 18:06:27 INFO 
+                [correlationId=f43a5205-3f4e-4360-928e-59095496c1cf]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180002 | balance=7380.00
+2025-12-29 18:06:27 INFO 
+                [correlationId=f43a5205-3f4e-4360-928e-59095496c1cf]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180001 | balance=59100.00
+2025-12-29 18:06:27 INFO 
+                [correlationId=f43a5205-3f4e-4360-928e-59095496c1cf]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180001 | newBalance=59100.00
+2025-12-29 18:06:27 INFO 
+                [correlationId=f43a5205-3f4e-4360-928e-59095496c1cf]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180001 | balance=59100.00
+2025-12-29 18:06:27 INFO 
+                [correlationId=f43a5205-3f4e-4360-928e-59095496c1cf]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180001 | balance=59100.00
+2025-12-29 18:07:35 INFO 
+                [correlationId=3397f29f-f770-49df-b1ae-2374653ebeb7]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180002 | balance=7440.00
+2025-12-29 18:07:35 INFO 
+                [correlationId=3397f29f-f770-49df-b1ae-2374653ebeb7]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180002 | newBalance=7440.00
+2025-12-29 18:07:35 INFO 
+                [correlationId=3397f29f-f770-49df-b1ae-2374653ebeb7]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180002 | balance=7440.00
+2025-12-29 18:07:35 INFO 
+                [correlationId=3397f29f-f770-49df-b1ae-2374653ebeb7]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180002 | balance=7440.00
+2025-12-29 18:07:35 INFO 
+                [correlationId=3397f29f-f770-49df-b1ae-2374653ebeb7]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180001 | balance=59040.00
+2025-12-29 18:07:35 INFO 
+                [correlationId=3397f29f-f770-49df-b1ae-2374653ebeb7]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180001 | newBalance=59040.00
+2025-12-29 18:07:35 INFO 
+                [correlationId=3397f29f-f770-49df-b1ae-2374653ebeb7]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180001 | balance=59040.00
+2025-12-29 18:07:35 INFO 
+                [correlationId=3397f29f-f770-49df-b1ae-2374653ebeb7]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180001 | balance=59040.00

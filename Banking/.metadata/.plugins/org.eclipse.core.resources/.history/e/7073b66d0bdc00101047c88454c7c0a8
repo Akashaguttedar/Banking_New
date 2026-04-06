@@ -1,0 +1,57 @@
+package Account_Service.com.Controller;
+
+import java.util.List;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import Account_Service.com.Entity.DTO.AccountCreateRequest;
+import Account_Service.com.Entity.DTO.AccountResponse;
+import Account_Service.com.Service.AccountService;
+
+@RestController
+@RequestMapping("/api/v1/accounts")
+public class AccountController {
+
+	
+	private final AccountService accountService;
+	
+	public AccountController(AccountService accountService) {
+		this.accountService = accountService;
+		
+	}
+	
+	@PostMapping
+    public ResponseEntity<AccountResponse> createAccount(
+            @RequestBody AccountCreateRequest request) {
+
+        return new ResponseEntity<>(
+                accountService.createAccount(request),
+                HttpStatus.CREATED
+        );
+    }
+	
+	
+	
+	@GetMapping("/{accountId}")
+    public ResponseEntity<AccountResponse> getAccount(
+            @PathVariable String accountId) {
+
+        return ResponseEntity.ok(accountService.getaccountbyid(accountId));
+    }
+	
+	
+	   @GetMapping("/user/{userId}")
+	    public ResponseEntity<List<AccountResponse>> getUserAccounts(
+	            @PathVariable String userId) {
+
+	        return ResponseEntity.ok(accountService.getaccountsByuserId(userId));
+	    }
+	
+}

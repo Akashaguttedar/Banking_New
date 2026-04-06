@@ -1,0 +1,46 @@
+package Transaction_Service.com.Controller;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import Transaction_Service.com.Entity.DTO.DepositRequest;
+import Transaction_Service.com.Entity.DTO.TransactionResponse;
+import Transaction_Service.com.Entity.DTO.WithdrawRequest;
+import Transaction_Service.com.Service.Transaction_Service;
+
+@RestController
+@RequestMapping("/transactions")
+public class TransactionController {
+
+	
+	
+	private final Transaction_Service service;
+	
+	
+	public TransactionController(Transaction_Service service) {
+		this.service = service;
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+	@PostMapping("/deposit")
+	public TransactionResponse deposite(@RequestBody DepositRequest depositRequest) {
+	
+		TransactionResponse deposit = service.deposit(depositRequest);
+		
+		return deposit;
+		
+	}
+	
+	@PostMapping("/withdraw")
+	public TransactionResponse withdraw(@RequestBody WithdrawRequest Request) {
+	
+		TransactionResponse withdraw = service.withdraw(Request);
+		
+		return withdraw;
+		
+	}
+}

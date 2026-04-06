@@ -1,0 +1,45 @@
+2026-01-02 22:04:30 INFO  [correlationId=] [traceId= spanId=] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-01-02 22:04:30 INFO  [correlationId=] [traceId= spanId=] Account_Service.com.AccountServiceApplication - Starting AccountServiceApplication using Java 17.0.3.1 with PID 4892 (C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\Account_Service\target\classes started by akash in C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\Account_Service)
+2026-01-02 22:04:30 INFO  [correlationId=] [traceId= spanId=] Account_Service.com.AccountServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-02 22:04:30 INFO  [correlationId=] [traceId= spanId=] org.springframework.cloud.config.client.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8002
+2026-01-02 22:04:30 INFO  [correlationId=] [traceId= spanId=] org.springframework.cloud.config.client.ConfigServerConfigDataLoader - Located environment: name=Account_Service, profiles=[default], label=null, version=8d4a2f81f87e7c5e79df7569ee3397f7e8b965be, state=
+2026-01-02 22:04:30 INFO  [correlationId=] [traceId= spanId=] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-02 22:04:30 INFO  [correlationId=] [traceId= spanId=] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-02 22:04:31 INFO  [correlationId=] [traceId= spanId=] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-02 22:04:31 INFO  [correlationId=] [traceId= spanId=] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
+2026-01-02 22:04:31 INFO  [correlationId=] [traceId= spanId=] org.springframework.cloud.context.scope.GenericScope - BeanFactory id=3052dc28-7c20-311e-a2ec-6788a9bba6e9
+2026-01-02 22:04:31 INFO  [correlationId=] [traceId= spanId=] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2026-01-02 22:04:32 INFO  [correlationId=] [traceId= spanId=] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2026-01-02 22:04:32 INFO  [correlationId=] [traceId= spanId=] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-02 22:04:32 INFO  [correlationId=] [traceId= spanId=] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-02 22:04:32 INFO  [correlationId=] [traceId= spanId=] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-02 22:04:32 INFO  [correlationId=] [traceId= spanId=] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1783 ms
+2026-01-02 22:04:32 INFO  [correlationId=] [traceId= spanId=] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-02 22:04:32 INFO  [correlationId=] [traceId= spanId=] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.39.Final
+2026-01-02 22:04:32 INFO  [correlationId=] [traceId= spanId=] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-02 22:04:32 INFO  [correlationId=] [traceId= spanId=] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-02 22:04:32 INFO  [correlationId=] [traceId= spanId=] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-02 22:04:33 INFO  [correlationId=] [traceId= spanId=] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4bf78061
+2026-01-02 22:04:33 INFO  [correlationId=] [traceId= spanId=] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-02 22:04:33 INFO  [correlationId=] [traceId= spanId=] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-02 22:04:34 INFO  [correlationId=] [traceId= spanId=] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-02 22:04:34 INFO  [correlationId=] [traceId= spanId=] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-02 22:04:34 INFO  [correlationId=] [traceId= spanId=] org.springframework.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-02 22:04:34 WARN  [correlationId=] [traceId= spanId=] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-02 22:04:35 WARN  [correlationId=] [traceId= spanId=] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-01-02 22:04:35 INFO  [correlationId=] [traceId= spanId=] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-01-02 22:04:35 INFO  [correlationId=] [traceId= spanId=] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2026-01-02 22:04:35 INFO  [correlationId=] [traceId= spanId=] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2026-01-02 22:04:35 INFO  [correlationId=] [traceId= spanId=] Account_Service.com.AccountServiceApplication - Started AccountServiceApplication in 9.141 seconds (process running for 10.151)
+2026-01-02 22:04:36 INFO  [correlationId=] [traceId= spanId=] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-02 22:04:36 INFO  [correlationId=] [traceId= spanId=] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-02 22:04:36 INFO  [correlationId=] [traceId= spanId=] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-01-02 22:05:07 WARN  [correlationId=f36269eb-1c16-446c-84bf-5951c4d49f67] [traceId=67e03d2856ce99a0be2de86102eecd18 spanId=fcf36726bc38655d] Account_Service.com.Service.imp.AccountServiceImp - Account not found while fetching balance | accountId=ACCO202512180009
+2026-01-02 22:05:07 WARN  [correlationId=f36269eb-1c16-446c-84bf-5951c4d49f67] [traceId=67e03d2856ce99a0be2de86102eecd18 spanId=fcf36726bc38655d] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [Account_Service.com.Exception.ResourceNotFoundException: Account not found]

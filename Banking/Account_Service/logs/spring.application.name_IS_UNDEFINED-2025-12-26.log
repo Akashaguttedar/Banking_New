@@ -1,0 +1,839 @@
+2025-12-26 14:53:10 INFO 
+                [correlationId=]
+                Account_Service.com.AccountServiceApplication - Starting AccountServiceApplication using Java 17.0.3.1 with PID 28156 (C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\Account_Service\target\classes started by akash in C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\Account_Service)
+2025-12-26 14:53:10 INFO 
+                [correlationId=]
+                Account_Service.com.AccountServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-26 14:53:10 INFO 
+                [correlationId=]
+                org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-26 14:53:10 INFO 
+                [correlationId=]
+                org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2025-12-26 14:53:10 INFO 
+                [correlationId=]
+                org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2025-12-26 14:53:10 INFO 
+                [correlationId=]
+                org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2025-12-26 14:53:10 INFO 
+                [correlationId=]
+                org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-26 14:53:10 INFO 
+                [correlationId=]
+                org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-26 14:53:10 INFO 
+                [correlationId=]
+                org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 547 ms
+2025-12-26 14:53:10 INFO 
+                [correlationId=]
+                org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-26 14:53:10 INFO 
+                [correlationId=]
+                org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-26 14:53:10 INFO 
+                [correlationId=]
+                com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-26 14:53:10 INFO 
+                [correlationId=]
+                com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54d3999d
+2025-12-26 14:53:10 INFO 
+                [correlationId=]
+                com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-26 14:53:10 INFO 
+                [correlationId=]
+                org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/banking_user_service]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.33
+	Default catalog/schema: banking_user_service/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-26 14:53:11 INFO 
+                [correlationId=]
+                org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-26 14:53:11 INFO 
+                [correlationId=]
+                org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-26 14:53:11 WARN 
+                [correlationId=]
+                org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-26 14:53:11 INFO 
+                [correlationId=]
+                org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-26 14:53:11 INFO 
+                [correlationId=]
+                org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2025-12-26 14:53:11 INFO 
+                [correlationId=]
+                org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2025-12-26 14:53:11 INFO 
+                [correlationId=]
+                Account_Service.com.AccountServiceApplication - Started AccountServiceApplication in 1.244 seconds (process running for 199.429)
+2025-12-26 14:53:11 INFO 
+                [correlationId=]
+                org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-12-26 14:54:21 INFO 
+                [correlationId=]
+                org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-26 14:54:21 INFO 
+                [correlationId=]
+                org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-26 14:54:21 INFO 
+                [correlationId=]
+                org.springframework.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+2025-12-26 14:56:12 WARN 
+                [correlationId=a4ca1ea5-213b-475c-b52a-280160a4849e]
+                Account_Service.com.Service.imp.AccountServiceImp - Account not found while fetching balance | accountId=ACCO202512180009
+2025-12-26 14:56:12 WARN 
+                [correlationId=a4ca1ea5-213b-475c-b52a-280160a4849e]
+                org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [Account_Service.com.Exception.ResourceNotFoundException: Account not found]
+2025-12-26 14:57:32 INFO 
+                [correlationId=]
+                org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-12-26 14:57:32 INFO 
+                [correlationId=]
+                org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-26 14:57:32 INFO 
+                [correlationId=]
+                org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8083"]
+2025-12-26 14:57:32 INFO 
+                [correlationId=]
+                org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-26 14:57:32 INFO 
+                [correlationId=]
+                org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8083"]
+2025-12-26 14:57:32 INFO 
+                [correlationId=]
+                org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-26 14:57:32 INFO 
+                [correlationId=]
+                com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-26 14:57:32 INFO 
+                [correlationId=]
+                com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-26 14:57:33 INFO 
+                [correlationId=]
+                Account_Service.com.AccountServiceApplication - Starting AccountServiceApplication using Java 17.0.3.1 with PID 28156 (C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\Account_Service\target\classes started by akash in C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\Account_Service)
+2025-12-26 14:57:33 INFO 
+                [correlationId=]
+                Account_Service.com.AccountServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-26 14:57:34 INFO 
+                [correlationId=]
+                org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-26 14:57:34 INFO 
+                [correlationId=]
+                org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interface.
+2025-12-26 14:57:34 INFO 
+                [correlationId=]
+                org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2025-12-26 14:57:34 INFO 
+                [correlationId=]
+                org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2025-12-26 14:57:34 INFO 
+                [correlationId=]
+                org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-26 14:57:34 INFO 
+                [correlationId=]
+                org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-26 14:57:34 INFO 
+                [correlationId=]
+                org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 708 ms
+2025-12-26 14:57:34 INFO 
+                [correlationId=]
+                org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-26 14:57:34 INFO 
+                [correlationId=]
+                org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-26 14:57:34 INFO 
+                [correlationId=]
+                com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2025-12-26 14:57:34 INFO 
+                [correlationId=]
+                com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4525077c
+2025-12-26 14:57:34 INFO 
+                [correlationId=]
+                com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2025-12-26 14:57:34 INFO 
+                [correlationId=]
+                org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/banking_user_service]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.33
+	Default catalog/schema: banking_user_service/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-26 14:57:34 INFO 
+                [correlationId=]
+                org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-26 14:57:34 INFO 
+                [correlationId=]
+                org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-26 14:57:35 WARN 
+                [correlationId=]
+                org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-26 14:57:35 INFO 
+                [correlationId=]
+                org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-26 14:57:35 INFO 
+                [correlationId=]
+                org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2025-12-26 14:57:35 INFO 
+                [correlationId=]
+                org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2025-12-26 14:57:35 INFO 
+                [correlationId=]
+                Account_Service.com.AccountServiceApplication - Started AccountServiceApplication in 1.945 seconds (process running for 463.475)
+2025-12-26 14:57:35 INFO 
+                [correlationId=]
+                org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-12-26 14:57:45 INFO 
+                [correlationId=]
+                org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-12-26 14:57:45 INFO 
+                [correlationId=]
+                org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-26 14:57:45 INFO 
+                [correlationId=]
+                org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8083"]
+2025-12-26 14:57:45 INFO 
+                [correlationId=]
+                org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-26 14:57:45 INFO 
+                [correlationId=]
+                org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8083"]
+2025-12-26 14:57:45 INFO 
+                [correlationId=]
+                org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-26 14:57:45 INFO 
+                [correlationId=]
+                com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-12-26 14:57:45 INFO 
+                [correlationId=]
+                com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2025-12-26 15:16:25 INFO 
+                [correlationId=]
+                org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2025-12-26 15:16:25 INFO 
+                [correlationId=]
+                Account_Service.com.AccountServiceApplication - Starting AccountServiceApplication using Java 17.0.3.1 with PID 38948 (C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\Account_Service\target\classes started by akash in C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\Account_Service)
+2025-12-26 15:16:25 INFO 
+                [correlationId=]
+                Account_Service.com.AccountServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-26 15:16:26 INFO 
+                [correlationId=]
+                org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-26 15:16:26 INFO 
+                [correlationId=]
+                org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-26 15:16:27 INFO 
+                [correlationId=]
+                org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-26 15:16:27 INFO 
+                [correlationId=]
+                org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 89 ms. Found 1 JPA repository interface.
+2025-12-26 15:16:28 INFO 
+                [correlationId=]
+                org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2025-12-26 15:16:28 INFO 
+                [correlationId=]
+                org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2025-12-26 15:16:28 INFO 
+                [correlationId=]
+                org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-26 15:16:28 INFO 
+                [correlationId=]
+                org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-26 15:16:28 INFO 
+                [correlationId=]
+                org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2670 ms
+2025-12-26 15:16:29 INFO 
+                [correlationId=]
+                org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-26 15:16:29 INFO 
+                [correlationId=]
+                org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-26 15:16:29 INFO 
+                [correlationId=]
+                org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-26 15:16:29 INFO 
+                [correlationId=]
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-26 15:16:30 INFO 
+                [correlationId=]
+                com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2107fe24
+2025-12-26 15:16:30 INFO 
+                [correlationId=]
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-26 15:16:30 INFO 
+                [correlationId=]
+                org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/banking_user_service]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.33
+	Default catalog/schema: banking_user_service/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-26 15:16:31 INFO 
+                [correlationId=]
+                org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-26 15:16:32 INFO 
+                [correlationId=]
+                org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-26 15:16:32 INFO 
+                [correlationId=]
+                org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-26 15:16:33 WARN 
+                [correlationId=]
+                org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-26 15:16:34 INFO 
+                [correlationId=]
+                org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-26 15:16:34 INFO 
+                [correlationId=]
+                org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2025-12-26 15:16:35 INFO 
+                [correlationId=]
+                org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2025-12-26 15:16:35 INFO 
+                [correlationId=]
+                Account_Service.com.AccountServiceApplication - Started AccountServiceApplication in 10.395 seconds (process running for 12.203)
+2025-12-26 15:16:35 INFO 
+                [correlationId=]
+                org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-26 15:16:35 INFO 
+                [correlationId=]
+                org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-26 15:16:35 INFO 
+                [correlationId=]
+                org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-12-26 15:16:42 INFO 
+                [correlationId=8076c3e5-fac6-4a66-b0ad-2c269822a571]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180002 | balance=6360.00
+2025-12-26 15:16:42 INFO 
+                [correlationId=8076c3e5-fac6-4a66-b0ad-2c269822a571]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180002 | newBalance=6360.00
+2025-12-26 15:16:42 INFO 
+                [correlationId=8076c3e5-fac6-4a66-b0ad-2c269822a571]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180002 | balance=6360.00
+2025-12-26 15:16:42 INFO 
+                [correlationId=8076c3e5-fac6-4a66-b0ad-2c269822a571]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180002 | balance=6360.00
+2025-12-26 15:16:42 INFO 
+                [correlationId=c9e361f9-eefc-4337-81d1-26636dae1702]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180001 | balance=60120.00
+2025-12-26 15:16:42 INFO 
+                [correlationId=c9e361f9-eefc-4337-81d1-26636dae1702]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180001 | newBalance=60120.00
+2025-12-26 15:16:42 INFO 
+                [correlationId=c9e361f9-eefc-4337-81d1-26636dae1702]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180001 | balance=60120.00
+2025-12-26 15:16:42 INFO 
+                [correlationId=c9e361f9-eefc-4337-81d1-26636dae1702]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180001 | balance=60120.00
+2025-12-26 15:19:11 INFO 
+                [correlationId=043b4e08-dd76-4b70-80cc-76b404dda960]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180002 | balance=6420.00
+2025-12-26 15:19:11 INFO 
+                [correlationId=043b4e08-dd76-4b70-80cc-76b404dda960]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180002 | newBalance=6420.00
+2025-12-26 15:19:11 INFO 
+                [correlationId=043b4e08-dd76-4b70-80cc-76b404dda960]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180002 | balance=6420.00
+2025-12-26 15:19:11 INFO 
+                [correlationId=043b4e08-dd76-4b70-80cc-76b404dda960]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180002 | balance=6420.00
+2025-12-26 15:19:11 INFO 
+                [correlationId=0a8d0613-e45c-4c23-8a6e-f5fe9c939cc8]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180001 | balance=60060.00
+2025-12-26 15:19:11 INFO 
+                [correlationId=0a8d0613-e45c-4c23-8a6e-f5fe9c939cc8]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180001 | newBalance=60060.00
+2025-12-26 15:19:11 INFO 
+                [correlationId=0a8d0613-e45c-4c23-8a6e-f5fe9c939cc8]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180001 | balance=60060.00
+2025-12-26 15:19:11 INFO 
+                [correlationId=0a8d0613-e45c-4c23-8a6e-f5fe9c939cc8]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180001 | balance=60060.00
+2025-12-26 15:27:41 INFO 
+                [correlationId=f572df7c-d242-42be-8275-6ea803eff9d5]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180002 | balance=6480.00
+2025-12-26 15:27:41 INFO 
+                [correlationId=f572df7c-d242-42be-8275-6ea803eff9d5]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180002 | newBalance=6480.00
+2025-12-26 15:27:41 INFO 
+                [correlationId=f572df7c-d242-42be-8275-6ea803eff9d5]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180002 | balance=6480.00
+2025-12-26 15:27:41 INFO 
+                [correlationId=f572df7c-d242-42be-8275-6ea803eff9d5]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180002 | balance=6480.00
+2025-12-26 15:27:41 INFO 
+                [correlationId=f572df7c-d242-42be-8275-6ea803eff9d5]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180001 | balance=60000.00
+2025-12-26 15:27:41 INFO 
+                [correlationId=f572df7c-d242-42be-8275-6ea803eff9d5]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180001 | newBalance=60000.00
+2025-12-26 15:27:41 INFO 
+                [correlationId=f572df7c-d242-42be-8275-6ea803eff9d5]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180001 | balance=60000.00
+2025-12-26 15:27:41 INFO 
+                [correlationId=f572df7c-d242-42be-8275-6ea803eff9d5]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180001 | balance=60000.00
+2025-12-26 15:36:44 INFO 
+                [correlationId=Correlation=123]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180002 | balance=6540.00
+2025-12-26 15:36:44 INFO 
+                [correlationId=Correlation=123]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180002 | newBalance=6540.00
+2025-12-26 15:36:44 INFO 
+                [correlationId=Correlation=123]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180002 | balance=6540.00
+2025-12-26 15:36:44 INFO 
+                [correlationId=Correlation=123]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180002 | balance=6540.00
+2025-12-26 15:36:44 INFO 
+                [correlationId=Correlation=123]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180001 | balance=59940.00
+2025-12-26 15:36:44 INFO 
+                [correlationId=Correlation=123]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180001 | newBalance=59940.00
+2025-12-26 15:36:44 INFO 
+                [correlationId=Correlation=123]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180001 | balance=59940.00
+2025-12-26 15:36:44 INFO 
+                [correlationId=Correlation=123]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180001 | balance=59940.00
+2025-12-26 16:02:09 INFO 
+                [correlationId=]
+                org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 26 class path changes (0 additions, 0 deletions, 26 modifications)
+2025-12-26 16:02:09 INFO 
+                [correlationId=]
+                org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-26 16:02:09 INFO 
+                [correlationId=]
+                org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8083"]
+2025-12-26 16:02:09 INFO 
+                [correlationId=]
+                org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-26 16:02:09 INFO 
+                [correlationId=]
+                org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8083"]
+2025-12-26 16:02:09 INFO 
+                [correlationId=]
+                org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-26 16:02:09 INFO 
+                [correlationId=]
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-26 16:02:09 INFO 
+                [correlationId=]
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-26 16:02:10 INFO 
+                [correlationId=]
+                Account_Service.com.AccountServiceApplication - Starting AccountServiceApplication using Java 17.0.3.1 with PID 38948 (C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\Account_Service\target\classes started by akash in C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\Account_Service)
+2025-12-26 16:02:10 INFO 
+                [correlationId=]
+                Account_Service.com.AccountServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-26 16:02:10 INFO 
+                [correlationId=]
+                org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-26 16:02:10 INFO 
+                [correlationId=]
+                org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+2025-12-26 16:02:11 INFO 
+                [correlationId=]
+                org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2025-12-26 16:02:11 INFO 
+                [correlationId=]
+                org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2025-12-26 16:02:11 INFO 
+                [correlationId=]
+                org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-26 16:02:11 INFO 
+                [correlationId=]
+                org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-26 16:02:11 INFO 
+                [correlationId=]
+                org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 818 ms
+2025-12-26 16:02:11 INFO 
+                [correlationId=]
+                org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-26 16:02:11 INFO 
+                [correlationId=]
+                org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-26 16:02:11 INFO 
+                [correlationId=]
+                com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-26 16:02:11 INFO 
+                [correlationId=]
+                com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74ec9a73
+2025-12-26 16:02:11 INFO 
+                [correlationId=]
+                com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-26 16:02:11 INFO 
+                [correlationId=]
+                org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/banking_user_service]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.33
+	Default catalog/schema: banking_user_service/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-26 16:02:11 INFO 
+                [correlationId=]
+                org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-26 16:02:11 INFO 
+                [correlationId=]
+                org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-26 16:02:11 WARN 
+                [correlationId=]
+                org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-26 16:02:11 INFO 
+                [correlationId=]
+                org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-26 16:02:11 INFO 
+                [correlationId=]
+                org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2025-12-26 16:02:11 INFO 
+                [correlationId=]
+                org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2025-12-26 16:02:11 INFO 
+                [correlationId=]
+                Account_Service.com.AccountServiceApplication - Started AccountServiceApplication in 1.521 seconds (process running for 2748.998)
+2025-12-26 16:02:11 INFO 
+                [correlationId=]
+                org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-12-26 16:02:21 INFO 
+                [correlationId=]
+                org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-12-26 16:02:21 INFO 
+                [correlationId=]
+                org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-26 16:02:21 INFO 
+                [correlationId=]
+                org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8083"]
+2025-12-26 16:02:22 INFO 
+                [correlationId=]
+                org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-26 16:02:22 INFO 
+                [correlationId=]
+                org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8083"]
+2025-12-26 16:02:22 INFO 
+                [correlationId=]
+                org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-26 16:02:22 INFO 
+                [correlationId=]
+                com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-26 16:02:22 INFO 
+                [correlationId=]
+                com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-26 16:33:26 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2025-12-26 16:33:26 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                Account_Service.com.AccountServiceApplication - Starting AccountServiceApplication using Java 17.0.3.1 with PID 38276 (C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\Account_Service\target\classes started by akash in C:\Users\akash\Documents\workspace-spring-tools-for-eclipse-4.32.2.RELEASE\Banking\Account_Service)
+2025-12-26 16:33:26 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                Account_Service.com.AccountServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-26 16:33:26 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-26 16:33:26 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-26 16:33:28 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-26 16:33:28 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 173 ms. Found 1 JPA repository interface.
+2025-12-26 16:33:29 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2025-12-26 16:33:29 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2025-12-26 16:33:29 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-26 16:33:29 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-26 16:33:29 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3107 ms
+2025-12-26 16:33:30 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-26 16:33:30 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-26 16:33:31 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-26 16:33:31 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-26 16:33:31 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39747453
+2025-12-26 16:33:31 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-26 16:33:31 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/banking_user_service]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.33
+	Default catalog/schema: banking_user_service/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-26 16:33:32 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-26 16:33:32 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-26 16:33:33 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-26 16:33:34 WARN 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-26 16:33:35 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-26 16:33:35 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2025-12-26 16:33:35 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2025-12-26 16:33:35 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                Account_Service.com.AccountServiceApplication - Started AccountServiceApplication in 9.481 seconds (process running for 10.335)
+2025-12-26 16:33:36 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-26 16:33:36 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-26 16:33:36 INFO 
+                [correlationId=]
+                [traceId= spanId=]
+                org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-12-26 16:34:28 INFO 
+                [correlationId=1f0f8b50-5507-4128-81fb-9e3d0c6540b0]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180002 | balance=6600.00
+2025-12-26 16:34:28 INFO 
+                [correlationId=1f0f8b50-5507-4128-81fb-9e3d0c6540b0]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180002 | newBalance=6600.00
+2025-12-26 16:34:28 INFO 
+                [correlationId=1f0f8b50-5507-4128-81fb-9e3d0c6540b0]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180002 | balance=6600.00
+2025-12-26 16:34:28 INFO 
+                [correlationId=1f0f8b50-5507-4128-81fb-9e3d0c6540b0]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180002 | balance=6600.00
+2025-12-26 16:34:28 INFO 
+                [correlationId=1f0f8b50-5507-4128-81fb-9e3d0c6540b0]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180001 | balance=59880.00
+2025-12-26 16:34:28 INFO 
+                [correlationId=1f0f8b50-5507-4128-81fb-9e3d0c6540b0]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180001 | newBalance=59880.00
+2025-12-26 16:34:28 INFO 
+                [correlationId=1f0f8b50-5507-4128-81fb-9e3d0c6540b0]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180001 | balance=59880.00
+2025-12-26 16:34:28 INFO 
+                [correlationId=1f0f8b50-5507-4128-81fb-9e3d0c6540b0]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180001 | balance=59880.00
+2025-12-26 16:53:08 INFO 
+                [correlationId=7b02ae80-794f-4d77-bb6b-d4fde0f4a504]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180002 | balance=6660.00
+2025-12-26 16:53:08 INFO 
+                [correlationId=7b02ae80-794f-4d77-bb6b-d4fde0f4a504]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180002 | newBalance=6660.00
+2025-12-26 16:53:08 INFO 
+                [correlationId=7b02ae80-794f-4d77-bb6b-d4fde0f4a504]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180002 | balance=6660.00
+2025-12-26 16:53:08 INFO 
+                [correlationId=7b02ae80-794f-4d77-bb6b-d4fde0f4a504]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180002 | balance=6660.00
+2025-12-26 16:53:08 INFO 
+                [correlationId=7b02ae80-794f-4d77-bb6b-d4fde0f4a504]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180001 | balance=59820.00
+2025-12-26 16:53:08 INFO 
+                [correlationId=7b02ae80-794f-4d77-bb6b-d4fde0f4a504]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180001 | newBalance=59820.00
+2025-12-26 16:53:08 INFO 
+                [correlationId=7b02ae80-794f-4d77-bb6b-d4fde0f4a504]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180001 | balance=59820.00
+2025-12-26 16:53:08 INFO 
+                [correlationId=7b02ae80-794f-4d77-bb6b-d4fde0f4a504]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180001 | balance=59820.00
+2025-12-26 17:07:02 INFO 
+                [correlationId=0b3b0df6-5d5e-427f-a4bf-8ae60e64613d]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180002 | balance=6720.00
+2025-12-26 17:07:02 INFO 
+                [correlationId=0b3b0df6-5d5e-427f-a4bf-8ae60e64613d]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180002 | newBalance=6720.00
+2025-12-26 17:07:02 INFO 
+                [correlationId=0b3b0df6-5d5e-427f-a4bf-8ae60e64613d]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180002 | balance=6720.00
+2025-12-26 17:07:02 INFO 
+                [correlationId=0b3b0df6-5d5e-427f-a4bf-8ae60e64613d]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180002 | balance=6720.00
+2025-12-26 17:07:02 INFO 
+                [correlationId=0b3b0df6-5d5e-427f-a4bf-8ae60e64613d]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180001 | balance=59760.00
+2025-12-26 17:07:02 INFO 
+                [correlationId=0b3b0df6-5d5e-427f-a4bf-8ae60e64613d]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180001 | newBalance=59760.00
+2025-12-26 17:07:02 INFO 
+                [correlationId=0b3b0df6-5d5e-427f-a4bf-8ae60e64613d]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180001 | balance=59760.00
+2025-12-26 17:07:02 INFO 
+                [correlationId=0b3b0df6-5d5e-427f-a4bf-8ae60e64613d]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180001 | balance=59760.00
+2025-12-26 17:13:50 INFO 
+                [correlationId=52cda8af-60c4-477c-b7d1-8e604d1845dd]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180002 | balance=6780.00
+2025-12-26 17:13:50 INFO 
+                [correlationId=52cda8af-60c4-477c-b7d1-8e604d1845dd]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180002 | newBalance=6780.00
+2025-12-26 17:13:50 INFO 
+                [correlationId=52cda8af-60c4-477c-b7d1-8e604d1845dd]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180002 | balance=6780.00
+2025-12-26 17:13:50 INFO 
+                [correlationId=52cda8af-60c4-477c-b7d1-8e604d1845dd]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180002 | balance=6780.00
+2025-12-26 17:13:50 INFO 
+                [correlationId=52cda8af-60c4-477c-b7d1-8e604d1845dd]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180001 | balance=59700.00
+2025-12-26 17:13:50 INFO 
+                [correlationId=52cda8af-60c4-477c-b7d1-8e604d1845dd]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180001 | newBalance=59700.00
+2025-12-26 17:13:51 INFO 
+                [correlationId=52cda8af-60c4-477c-b7d1-8e604d1845dd]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180001 | balance=59700.00
+2025-12-26 17:13:51 INFO 
+                [correlationId=52cda8af-60c4-477c-b7d1-8e604d1845dd]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180001 | balance=59700.00
+2025-12-26 17:19:50 INFO 
+                [correlationId=f92e1685-f6af-4d07-aa30-19026e3702d6]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180002 | balance=6840.00
+2025-12-26 17:19:50 INFO 
+                [correlationId=f92e1685-f6af-4d07-aa30-19026e3702d6]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180002 | newBalance=6840.00
+2025-12-26 17:19:50 INFO 
+                [correlationId=f92e1685-f6af-4d07-aa30-19026e3702d6]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180002 | balance=6840.00
+2025-12-26 17:19:51 INFO 
+                [correlationId=f92e1685-f6af-4d07-aa30-19026e3702d6]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180002 | balance=6840.00
+2025-12-26 17:19:51 INFO 
+                [correlationId=f92e1685-f6af-4d07-aa30-19026e3702d6]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance API called | accountId=ACCO202512180001 | balance=59640.00
+2025-12-26 17:19:51 INFO 
+                [correlationId=f92e1685-f6af-4d07-aa30-19026e3702d6]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Apply balance request | accountId=ACCO202512180001 | newBalance=59640.00
+2025-12-26 17:19:51 INFO 
+                [correlationId=f92e1685-f6af-4d07-aa30-19026e3702d6]
+                [traceId= spanId=]
+                Account_Service.com.Service.imp.AccountServiceImp - Balance updated successfully | accountId=ACCO202512180001 | balance=59640.00
+2025-12-26 17:19:51 INFO 
+                [correlationId=f92e1685-f6af-4d07-aa30-19026e3702d6]
+                [traceId= spanId=]
+                Account_Service.com.Controller.AccountController - Apply balance successful | accountId=ACCO202512180001 | balance=59640.00

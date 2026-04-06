@@ -1,0 +1,153 @@
+package Transaction_Service.com.Controller;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.util.StringUtils;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.server.ResponseStatusException;
+
+import java.math.BigDecimal;
+
+import Transaction_Service.com.Entity.TransactionStatus;
+import Transaction_Service.com.Entity.DTO.DepositRequest;
+import Transaction_Service.com.Entity.DTO.TransactionResponse;
+import Transaction_Service.com.Entity.DTO.TransferRequest;
+import Transaction_Service.com.Entity.DTO.WithdrawRequest;
+import Transaction_Service.com.Service.Transaction_Service;
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@RestController
+@RequestMapping("/transactions")
+public class TransactionController {
+
+	
+	
+	
+	
+	
+	private final Transaction_Service service;
+	
+	
+	public TransactionController(Transaction_Service service) {
+		
+		this.service = service;
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+	@PostMapping("/deposit")
+	public TransactionResponse deposit(@RequestBody DepositRequest depositRequest) {
+	  log.info("Deposit request received | accountId={} | amount={}",
+	                depositRequest != null ? depositRequest.getAccountId() : null,
+	                depositRequest != null ? depositRequest.getAmount() : null);
+	  
+	  // Basic validation
+      if (depositRequest == null) {
+          log.warn("Deposit request body is null");
+          throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Request body is required");
+      }
+      if (!StringUtils.hasText(depositRequest.getAccountId())) {
+          log.warn("Invalid deposit request: missing accountId");
+          throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "accountId is required");
+      }
+      if (depositRequest.getAmount() == null || depositRequest.getAmount().compareTo(BigDecimal.ZERO) <= 0) {
+          log.warn("Invalid deposit request: amount must be positive | amount={}", depositRequest.getAmount());
+          throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "amount must be greater than zero");
+      }
+
+	  try {
+		TransactionResponse deposit = service.deposit(depositRequest);
+		
+		 log.info("Deposit successful | transactionId={} | accountId={} | amount={}",
+				 deposit != null ? deposit.getTransactionId() : null,
+                 depositRequest.getAccountId(),
+                 depositRequest.getAmount());
+		
+		
+		return deposit;
+	  } catch (Exception ex) {
+          log.error("Deposit failed | accountId={} | amount={} | reason={}",
+                  depositRequest.getAccountId(),
+                  depositRequest.getAmount(),
+                  ex.getMessage(),
+                  ex);
+          throw ex;
+      }
+	  
+	}
+	
+	public TransactionResponse depositFallback(DepositRequest request, Exception ex) {
+
+	        log.error("Deposit fallback triggered | accountId={} | reason={}",
+	                request != null ? request.getAccountId() : null, ex != null ? ex.getMessage() : null);
+
+	        return TransactionResponse.builder()
+	                .status(TransactionStatus.FAILED)
+	                .build();
+	    }
+	
+	@PostMapping("/withdraw")
+	public TransactionResponse withdraw(@RequestBody WithdrawRequest request) {
+		 log.info("Withdraw request received | accountId={} | amount={}",
+				 request != null ? request.getAccountId() : null,
+				 request != null ? request.getAmount() : null);
+		
+		
+		 try {
+	            TransactionResponse response = service.withdraw(request);
+
+	            log.info("Withdraw successful | transactionId={} | accountId={} | amount={}",
+	                    response != null ? response.getTransactionId() : null,
+	                    request != null ? request.getAccountId() : null,
+	                    request != null ? request.getAmount() : null);
+
+	            return response;
+
+	        } catch (Exception ex) {
+	            log.error("Withdraw failed | accountId={} | amount={} | reason={}",
+	                    request != null ? request.getAccountId() : null,
+	                    request != null ? request.getAmount() : null,
+	                    ex.getMessage(),
+	                    ex);
+	            throw ex;
+	        }
+		
+	}
+	
+	
+	@PostMapping("/transfer")
+	public TransactionResponse transfer(@RequestBody TransferRequest request) {
+		
+		log.info("Transfer request received | fromAccount={} | toAccount={} | amount={}",
+                request != null ? request.getFromAccountId() : null,
+                request != null ? request.getToAccountId() : null,
+                request != null ? request.getAmount() : null);
+		
+		try {
+            TransactionResponse response = service.transfer(request);
+
+            log.info("Transfer successful | transactionId={} | fromAccount={} | toAccount={} | amount={}",
+                    response != null ? response.getTransactionId() : null,
+                    request != null ? request.getFromAccountId() : null,
+                    request != null ? request.getToAccountId() : null,
+                    request != null ? request.getAmount() : null);
+
+            return response;
+
+        } catch (Exception ex) {
+            log.error("Transfer failed | fromAccount={} | toAccount={} | amount={} | reason={}",
+                    request != null ? request.getFromAccountId() : null,
+                    request != null ? request.getToAccountId() : null,
+                    request != null ? request.getAmount() : null,
+                    ex.getMessage(),
+                    ex);
+            throw ex;
+        }
+		
+	}
+	
+}
