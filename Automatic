@@ -1,0 +1,248 @@
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
+
+public class Excelvalidate {
+
+    public static void main(String[] args) {
+
+        Path path = Paths.get(getproperties("source"));
+        Path targetpath = Paths.get(getproperties("Target"));
+
+        Map<String, String> gettingthedata = gettingthedata(targetpath);
+        writtingdatatosource(gettingthedata, path);
+    }
+
+    private static Map<String, String> gettingthedata(Path targetpath) {
+
+        Map<String, String> load = new HashMap<>();
+        Map<String, Integer> headerMap = new HashMap<>();
+
+        if (!Files.exists(targetpath)) {
+            System.out.println("File not found");
+        }
+
+        try (FileInputStream fis = new FileInputStream(targetpath.toFile())) {
+
+            Workbook workbook = new XSSFWorkbook(fis);
+            Sheet sheet = workbook.getSheetAt(0);
+
+            sheet.getRow(0).forEach(cell ->
+                    headerMap.put(
+                            cell.getStringCellValue().trim(),
+                            cell.getColumnIndex()
+                    )
+            );
+
+            int accountCol =
+                    getRequiredColumn(headerMap, getproperties("T_Column1"));
+
+            int nameCol =
+                    getRequiredColumn(headerMap, getproperties("T_Column2"));
+
+            DataFormatter formatter = new DataFormatter();
+
+            for (int i = 1; i <= sheet.getLastRowNum(); i++) {
+
+                Row raw = sheet.getRow(i);
+
+                String account =
+                        formatter.formatCellValue(raw.getCell(accountCol)).trim();
+
+                String name =
+                        formatter.formatCellValue(raw.getCell(nameCol)).trim();
+
+                load.put(account, name);
+            }
+
+            headerMap.clear();
+
+        } catch (Exception e) {
+            System.err.println(
+                    "Failed to read target workbook: " + e.getMessage()
+            );
+        }
+
+        return load;
+    }
+
+    private static void writtingdatatosource(
+            Map<String, String> load,
+            Path path) {
+
+        Map<String, Integer> headerMap = new HashMap<>();
+
+        if (!Files.exists(path)) {
+            System.out.println("File not found");
+        }
+
+        try (FileInputStream fis = new FileInputStream(path.toFile())) {
+
+            Workbook workbook = new XSSFWorkbook(fis);
+
+            Sheet sheet = workbook.getSheetAt(0);
+
+            Row raw1 = sheet.getRow(0);
+
+            raw1.forEach(cell ->
+                    headerMap.put(
+                            cell.getStringCellValue().trim(),
+                            cell.getColumnIndex()
+                    )
+            );
+
+            Integer assigned =
+                    getRequiredColumn(
+                            headerMap,
+                            getproperties("S_Column1")
+                    );
+
+            Integer lastfour =
+                    getRequiredColumn(
+                            headerMap,
+                            getproperties("S_Column2")
+                    );
+
+            Integer validate =
+                    getRequiredColumn(
+                            headerMap,
+                            getproperties("S_Column3")
+                    );
+
+            if (validate == null) {
+                validate = (int) raw1.getLastCellNum();
+                raw1.createCell(validate).setCellValue("Validate");
+            }
+
+            DataFormatter formatter = new DataFormatter();
+
+            for (int i = 1; i <= sheet.getLastRowNum(); i++) {
+
+                Row raw = sheet.getRow(i);
+
+                Cell cell = raw.createCell(validate);
+
+                String account =
+                        formatter.formatCellValue(
+                                raw.getCell(lastfour)
+                        ).trim();
+
+                String name =
+                        formatter.formatCellValue(
+                                raw.getCell(assigned)
+                        ).trim();
+
+                boolean findaccount =
+                        load.entrySet()
+                                .stream()
+                                .anyMatch((key) ->
+                                        key.getKey().endsWith(account)
+                                );
+
+                boolean namematched =
+                        load.entrySet()
+                                .stream()
+                                .anyMatch((key) ->
+                                        key.getKey().endsWith(account)
+                                                && key.getValue().equals(name)
+                                );
+
+                if (findaccount) {
+
+                    if (namematched) {
+
+                        cell.setCellValue("Matched");
+
+                        System.out.println(
+                                "Account number " + account
+                                        + " is matched with name " + name
+                        );
+
+                    } else {
+
+                        cell.setCellValue("Not Matched");
+
+                        System.out.println(
+                                "Account number " + account
+                                        + " is not matched with name " + name
+                                        + " in target file"
+                        );
+                    }
+
+                } else {
+
+                    cell.setCellValue("Not Found");
+
+                    System.out.println(
+                            "Account number " + account
+                                    + " is not found in target file"
+                    );
+                }
+            }
+
+            try (FileOutputStream fos =
+                         new FileOutputStream(path.toFile())) {
+
+                workbook.write(fos);
+            }
+
+        } catch (Exception e) {
+
+            System.err.println(
+                    "Failed to read source workbook: " + e.getMessage()
+            );
+        }
+    }
+
+    private static Integer getRequiredColumn(
+            Map<String, Integer> headerMap,
+            String headerName) {
+
+        Integer columnIndex = headerMap.get(headerName.trim());
+
+        if (columnIndex == null) {
+
+            System.out.println(
+                    "Header " + headerName
+                            + " not found. Available headers: "
+                            + headerMap.keySet()
+            );
+
+            return null;
+        }
+
+        return columnIndex;
+    }
+
+    private static String getproperties(String name) {
+
+        Path file = Paths.get("Properties.properties");
+
+        try (FileInputStream fis =
+                     new FileInputStream(file.toFile())) {
+
+            Properties p = new Properties();
+
+            p.load(fis);
+
+            return p.getProperty(name);
+
+        } catch (Exception e) {
+
+            System.err.println(
+                    "Failed to read properties file: "
+                            + e.getMessage()
+            );
+
+            return null;
+        }
+    }
+}
